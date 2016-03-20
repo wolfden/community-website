@@ -1,0 +1,5 @@
+baseurl = "http://community.sabayon.org/"
+languageCode = "en-us"
+title = "Sabayon Linux"
+canonifyurls = true
+
