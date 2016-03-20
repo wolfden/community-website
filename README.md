@@ -1,4 +1,4 @@
-Sabayon blog (Hugo-powered)
+SCR draft website (Hugo-powered)
 =================
 
 State: draft
@@ -18,23 +18,16 @@ and rebuild the site immediately, *and* it will make these changes available at 
 your finished site in your browser. Go on, try it. This is one of the best ways to preview your site while working on it.
 
 To further learn Hugo and learn more, read through the Hugo [documentation](http://gohugo.io/overview/introduction)
-or browse around the files in this repository. 
+or browse around the files in this repository.
 
-[This site is still a draft, join the issue to discuss a graphic and UX change.](https://github.com/Sabayon/sabayon-website-next/issues/2)
-
-
-What's the current state:
+Preview
 ---------------
 
-* respected the links schema of the old site to avoid missing pages
-* hugo skeleton for the contents and page visualization
-* bootstrap and a minimal theming (design and graphic isn't actually my field of expertize)
+*Home*
+![Home](https://i.imgur.com/dw9LMqQ.png)
 
-Future (Notes also taken from users feedback):
----------------
+*Search*
+![Search](https://i.imgur.com/e4qmYsY.png)
 
-* UI/X Redesign
-* A more cool and appropriate color palette
-* Jumbotron background image is just horrible && feels so default
-* [...]
-
+*How to Install*
+![How to install](https://i.imgur.com/thMrPQF.png)
