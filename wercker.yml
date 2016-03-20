@@ -5,8 +5,8 @@ build:
          flags: "--destination='deploy' --verbose=true"
 deploy:
   steps:
-    - leipert/git-push:
+    - ysqi/git-push@0.7.15:
          gh_oauth: $GIT_TOKEN
          repo: Sabayon/community-website
-         branch: gh-pages
+         gh-pages: true
          basedir: deploy
