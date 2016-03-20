@@ -117,103 +117,22 @@
 
         <div class="modal-body">
           To install this package you have to enable the <code><span class="repository"></span></code> repository available in <b>SCR</b>. <br><br>
-          <b>First, be sure to have weekly repositories disabled, and main installed:</b><br><br>
+          <b>1) First, be sure to have weekly repositories disabled, and main installed:</b><br><br>
 <pre>
 sudo equo repo disable sabayon-weekly
 sudo equo repo enable sabayonlinux.org
 </pre>
 <br>
-          <b>Then create a file called <code>entropy_<span class="repository"></span></code> inside <code>/etc/entropy/repositories.conf.d/</code>
-            with the following content (<i>sudo nano /etc/entropy/repositories.conf.d/entropy_<span class="repository"></span></i>): <b/><br>
+          <b>2) Then let's install <code>enman</code> the Entropy repository manager: <b/><br>
             <br>
 <pre>
-[<span class="repository"></span>]
-desc = <span class="repository"></span> Repository
-enabled = true
-
-# Sabayon Packages Continent-based Load Balancer
-repo = http://dl.sabayon.org/community/<span class="repository"></span>#bz2
-pkg = http://dl.sabayon.org/community/<span class="repository"></span>
-
-# id-REPO, Indonesian FOSS Repository, 100Mbit/sec
-pkg = http://bali.idrepo.or.id/sabayon/community/<span class="repository"></span>
-pkg = http://madura.idrepo.or.id/sabayon/community/<span class="repository"></span>
-pkg = http://sumbawa.idrepo.or.id/sabayon/community/<span class="repository"></span>
-
-# RIKEN Nishina Center for research support, Japan, 1Gbit/sec
-pkg = http://riksun.riken.go.jp/pub/pub/Linux/sabayon/community/<span class="repository"></span>
-
-# Yamagata University, Japan, 1Gbit/sec
-pkg = http://ftp.yz.yamagata-u.ac.jp/pub/linux/sabayonlinux/community/<span class="repository"></span>
-
-# KDDI R&D Laboratories Inc., Japan, 200Mbit/sec
-pkg = http://ftp.kddilabs.jp/Linux/packages/sabayonlinux/community/<span class="repository"></span>
-
-# Silicon Hill (http://www.sh.cvut.cz), 1Gbit/sec, Czech Republic
-pkg = http://ftp.sh.cvut.cz/MIRRORS/sabayon/community/<span class="repository"></span>
-
-# UPC Česká republika, a.s., 2Gbit/sec, Czech Republic
-pkg = http://debian.mirror.dkm.cz/sabayon/community/<span class="repository"></span>
-
-# KLID, Denmark, 1Gbit/sec
-pkg = ftp://ftp.klid.dk/sabayonlinux/community/<span class="repository"></span>
-
-# Free Software Network, Hungary, 1Gbit/sec
-pkg = http://ftp.fsn.hu/pub/linux/distributions/sabayon/community/<span class="repository"></span>
-# pkg = rsync://ftp.fsn.hu/linux/sabayon/community/<span class="repository"></span>
-# pkg = ftp://ftp.fsn.hu/pub/linux/distributions/sabayon/community/<span class="repository"></span>
-
-# University of Crete, 1Gbit/sec, Greece
-pkg = http://ftp.cc.uoc.gr/mirrors/linux/sabayonlinux/community/<span class="repository"></span>
-
-# Rede das Novas Licenciaturas - Instituto Superior Técnico, 1Gbit/sec, Portugal
-pkg = http://ftp.rnl.ist.utl.pt/pub/sabayon/community/<span class="repository"></span>
-# pkg = ftp://ftp.rnl.ist.utl.pt/pub/sabayon/community/<span class="repository"></span>
-
-# Freelydifferent.com, France
-pkg = http://mirror.freelydifferent.com/sabayon/community/<span class="repository"></span>
-
-# NLUUG, Holland
-pkg = ftp://ftp.nluug.nl/pub/os/Linux/distr/sabayonlinux/community/<span class="repository"></span>
-# pkg = rsync://ftp.nluug.nl/sabayonlinux/community/<span class="repository"></span>
-
-# Surfnet, Holland
-pkg = http://ftp.surfnet.nl/pub/os/Linux/distr/sabayonlinux/community/<span class="repository"></span>
-# pkg = rsync://ftp.SURFnet.nl/sabayonlinux/community/<span class="repository"></span>
-
-# Internode, Australia
-pkg = http://mirror.internode.on.net/pub/sabayon/community/<span class="repository"></span>
-
-# Instituto Federal de Educação, Ciência e Tecnologia do Cearà, Brazil
-pkg = http://www2.itti.ifce.edu.br/sabayon/community/<span class="repository"></span>
-
-# Yandex Linux Mirror, Russian Federation
-# pkg = ftp://mirror.yandex.ru/sabayon/community/<span class="repository"></span>
-# pkg = rsync://mirror.yandex.ru/sabayon/community/<span class="repository"></span>
-pkg = http://mirror.yandex.ru/sabayon/community/<span class="repository"></span>
-
-# Universidade Federal do Parana', Brazil
-# pkg = ftp://sabayon.c3sl.ufpr.br/sabayon/community/<span class="repository"></span>
-# pkg = rsync://sabayon.c3sl.ufpr.br/sabayon/community/<span class="repository"></span>
-pkg = http://sabayon.c3sl.ufpr.br/community/<span class="repository"></span>
-
-# University of Maryland LUG, 1Gbit/sec, United States
-# pkg = rsync://mirror.umd.edu/sabayonlinux/community/<span class="repository"></span>
-pkg = http://mirror.umd.edu/sabayonlinux/community/<span class="repository"></span>
-
-# Open Source Institute, Clarkson University, 300Mbit/sec, United States
-pkg = http://mirror.clarkson.edu/sabayon/community/<span class="repository"></span>
-
-# Cross-LFS Project mirror, United States
-pkg = http://cross-lfs.sabayonlinux.org/community/<span class="repository"></span>
-
-# GARR Network mirror, Italy
-pkg = http://na.mirror.garr.it/mirrors/sabayonlinux/community/<span class="repository"></span>
+sudo equo i enman
+sudo enman add <span class="repository"></span>
 </pre>
 
 <br><br>
 
-<b>Now let's upgrade the Entropy database and install the package:</b>
+<b>3)Now let's upgrade the Entropy database and install the package:</b>
 <pre>
 sudo equo up
 sudo equo install <span class="package"></span>
