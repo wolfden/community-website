@@ -1,4 +1,4 @@
-baseurl = "http://sabayon.github.io/community-website/"
+baseurl = "https://sabayon.github.io/community-website/"
 languageCode = "en-us"
 title = "Sabayon Linux"
 canonifyurls = true
