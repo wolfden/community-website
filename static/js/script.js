@@ -2719,7 +2719,7 @@ $(document).ready(function() {
 
     };
     $.ajax({
-        url: "http://mirror.de.sabayon.org/community/metadata.json",
+        url: "https://cdn-secure-mirror-redirect.mudler.pm/mirrors/sabayonlinux/community/metadata.json",
         dataType: "jsonp",
     });
 
