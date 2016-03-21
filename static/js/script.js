@@ -1,19 +1,8 @@
-
 $(document).ready(function() {
+    parsePackages = function(data) {
 
-
-
-
-
-
-
-   parsePackages = function(data){
-
-
-
-     $('#searchpkg .typeahead').typeahead({
-
-       order: "asc",
+        $('#searchpkg .typeahead').typeahead({
+            order: "asc",
             dynamic: !0,
             delay: 500,
             source: {
@@ -25,31 +14,24 @@ $(document).ready(function() {
             },
             callback: {
                 onClick: function(a, s, e) {
-                  var modal=  $('#addRepository');
-                  modal.find('.package').text(e.package)
-                  modal.find('.repository').text(e.repository)
-                  modal.find('.packagearch').text(e.arch)
+                    var modal = $('#addRepository');
+                    modal.find('.package').text(e.package)
+                    modal.find('.repository').text(e.repository)
+                    modal.find('.packagearch').text(e.arch)
 
-                  modal.modal();
+                    modal.modal();
 
 
                 }
             }
-          }
-          );
+        });
 
-
-
-  };
-
-
-
-$.ajax( {url: "http://mirror.de.sabayon.org/community/metadata.json",
-  dataType: "jsonp",
-}
-);
+    };
+    $.ajax({
+        url: "http://mirror.de.sabayon.org/community/metadata.json",
+        dataType: "jsonp",
+    });
 
 
 
 });
-
