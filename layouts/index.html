@@ -74,6 +74,12 @@
         <b>DISCLAIMER: <i>SCR</i> packages are user produced content. Any use of the provided files is at your own risk. YOU HAVE BEEN WARNED.</b>
 <br>
 <hr>
+<h1> TL;DR </h1>
+Information and how-to use: <a href="https://wiki.sabayon.org/index.php?title=En:Sabayon_Community_Repositories">Wiki page</a>
+Packages requests: <a href="https://bugs.sabayon.org/enter_bug.cgi?product=Community%20Repositories">Bugzilla section</a>
+Guidelines and Bylaws (for SCR Devs): <a href="https://github.com/Sabayon/scr-docs">scr-docs Github repository</a>
+
+<hr>
         <h1> SCR Developers </h1>
 
         SCR Developers(SCRD) are members of the community charged with keeping the SCR in working order.
@@ -123,6 +129,7 @@
           To install this package you have to enable the <code><span class="repository"></span></code> repository available in <b>SCR</b>. <br><br>
           <b>1) First, be sure to have weekly repositories disabled, and main installed:</b><br><br>
 <pre>
+sudo mv /etc/entropy/repositories.conf.d/entropy_sabayonlinux.org{.example,}
 sudo equo repo disable sabayon-weekly
 sudo equo repo enable sabayonlinux.org
 </pre>
