@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+<link href="css/jquery.typeahead.min.css" rel="stylesheet">
 <style>
   body {
     margin-top: 0px;
@@ -29,13 +30,13 @@
 
 
 
-              <div id="custom-search-input" class="col-md-12 typeahead-container">
-                            <div id="searchpkg"  class="input-group col-md-12 typeahead-field">
-                                    <span class="typeahead-query">  <input type="text" class="typeahead form-control input-lg" type="text" placeholder="Find Packages" />
+              <div id="custom-search-input" class="col-md-12 typeahead__container">
+                            <div id="searchpkg"  class="input-group col-md-12 typeahead__field">
+                                    <span class="typeahead__query">  <input type="text" class="js-typeahead form-control" type="text" placeholder="Find Packages" />
                                           </span>
-                                <span class="input-group-btn typeahead-button">
+                                <span class="input-group-btn typeahead__button">
                                     <button class="btn btn-info btn-md" type="button">
-                                        <i class="glyphicon glyphicon-search"></i>
+                                        <i class="glyphicon glyphicon-search typeahead__search-icon"></i>
                                     </button>
                                 </span>
                             </div>
@@ -227,4 +228,5 @@ sudo equo install <span class="package"></span>
       </section>
 
 
-      {{ partial "footer.copyright.html" . }} {{ partial "footer.html" . }}
+    {{ partial "footer.copyright.html" . }} {{ partial "footer.html" . }}
+    <script src="http://localhost:1313/community-website/js/jquery.typeahead.min.js"></script>
