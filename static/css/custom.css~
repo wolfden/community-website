@@ -112,11 +112,6 @@ input {
 
 #custom-search-input .glyphicon-search{
     font-size: 23px;
-    display: inline;
-    background: none;
-    height: auto;
-    width: auto;
-    padding: 0;
 }
 
 .kk-suggest-detail {
