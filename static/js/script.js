@@ -83,7 +83,7 @@ $(document).ready(function() {
 
     // JSONP calls parsePackages with payload after finish
     $.ajax({
-        url: "http://mirror.de.sabayon.org/sbi/metadata/metadata.json",
+        url: "https://mirror3.mirror.garr.it/mirrors/sabayonlinux/sbi/metadata/metadata.json",
         dataType: "jsonp",
     });
 
