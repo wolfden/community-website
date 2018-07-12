@@ -104,15 +104,11 @@ input {
     }
 }
 
-#custom-search-input .typeahead__button {
-    vertical-align: top;
-}
-
-#custom-search-input .js-typeahead__result-container {
+#custom-search-input .result-container {
     display: none;
 }
 
-#custom-search-input.cancel .js-typeahead__result-container {
+#custom-search-input.cancel .result-container {
     display: table-cell;
     font-size: 14px;
     float: left;
@@ -121,7 +117,7 @@ input {
     padding: 6px 12px;
 }
 
-#custom-search-input.cancel.result .js-typeahead__result-container {
+#custom-search-input.cancel.result .result-container {
     margin: 0;
     padding: 0;
 }
